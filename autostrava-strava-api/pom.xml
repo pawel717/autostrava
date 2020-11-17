@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>autostrava</artifactId>
+        <groupId>com.autostrava</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>autostrava-strava-api</artifactId>
+
+    <properties>
+        <api.base.sourcePath>${project.basedir}/src/main/resources</api.base.sourcePath>
+        <api.base.invokerPackage>com.autostrava.api.gen</api.base.invokerPackage>
+        <api.base.modelPackage>com.autostrava.api.gen.dto</api.base.modelPackage>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openapitools</groupId>
+            <artifactId>jackson-databind-nullable</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>${maven-clean-plugin.version}</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${project.basedir}/src/main/java</directory>
+                        </fileset>
+                    </filesets>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>delete-files</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.openapitools</groupId>
+                <artifactId>openapi-generator-maven-plugin</artifactId>
+                <version>${openapi-generator-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>krungsri-account_mutual_fund_wealth</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputSpec>${api.base.sourcePath}/swagger.json</inputSpec>
+                            <generatorName>spring</generatorName>
+                            <library>spring-boot</library>
+                            <modelNameSuffix>DTO</modelNameSuffix>
+                            <generateApis>false</generateApis>
+                            <generateModelTests>false</generateModelTests>
+                            <addCompileSourceRoot>false</addCompileSourceRoot>
+                            <generateSupportingFiles>false</generateSupportingFiles>
+                            <output>${project.basedir}</output>
+                            <configOptions>
+                                <booleanGetterPrefix>is</booleanGetterPrefix>
+                                <interfaceOnly>true</interfaceOnly>
+                                <skipDefaultInterface>true</skipDefaultInterface>
+                                <java8>true</java8>
+                                <dateLibrary>java8</dateLibrary>
+                                <invokerPackage>${api.base.invokerPackage}</invokerPackage>
+                                <modelPackage>${api.base.modelPackage}</modelPackage>
+                            </configOptions>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
