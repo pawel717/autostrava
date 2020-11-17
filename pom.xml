@@ -17,6 +17,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>autostrava-strava-api</module>
+        <module>autostrava-strava-api-webclient</module>
     </modules>
 
     <properties>
