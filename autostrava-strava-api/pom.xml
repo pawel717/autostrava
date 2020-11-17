@@ -15,6 +15,7 @@
         <api.base.sourcePath>${project.basedir}/src/main/resources</api.base.sourcePath>
         <api.base.invokerPackage>com.autostrava.api.gen</api.base.invokerPackage>
         <api.base.modelPackage>com.autostrava.api.gen.dto</api.base.modelPackage>
+        <api.base.clientPackage>com.autostrava.api.gen.client</api.base.clientPackage>
     </properties>
 
     <dependencies>
@@ -65,22 +66,18 @@
                         </goals>
                         <configuration>
                             <inputSpec>${api.base.sourcePath}/swagger.json</inputSpec>
-                            <generatorName>spring</generatorName>
-                            <library>spring-boot</library>
+                            <generatorName>java</generatorName>
+                            <library>webclient</library>
                             <modelNameSuffix>DTO</modelNameSuffix>
-                            <generateApis>false</generateApis>
-                            <generateModelTests>false</generateModelTests>
-                            <addCompileSourceRoot>false</addCompileSourceRoot>
-                            <generateSupportingFiles>false</generateSupportingFiles>
+
                             <output>${project.basedir}</output>
                             <configOptions>
                                 <booleanGetterPrefix>is</booleanGetterPrefix>
-                                <interfaceOnly>true</interfaceOnly>
-                                <skipDefaultInterface>true</skipDefaultInterface>
                                 <java8>true</java8>
                                 <dateLibrary>java8</dateLibrary>
                                 <invokerPackage>${api.base.invokerPackage}</invokerPackage>
                                 <modelPackage>${api.base.modelPackage}</modelPackage>
+                                <apiPackage>${api.base.clientPackage}</apiPackage>
                             </configOptions>
                         </configuration>
                     </execution>
