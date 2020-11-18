@@ -30,6 +30,11 @@
             <artifactId>jackson-databind-nullable</artifactId>
             <version>0.1.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+            <version>3.0.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -69,7 +74,8 @@
                             <generatorName>java</generatorName>
                             <library>webclient</library>
                             <modelNameSuffix>DTO</modelNameSuffix>
-
+                            <generateApiTests>false</generateApiTests>
+                            <generateModelTests>false</generateModelTests>
                             <output>${project.basedir}</output>
                             <configOptions>
                                 <booleanGetterPrefix>is</booleanGetterPrefix>

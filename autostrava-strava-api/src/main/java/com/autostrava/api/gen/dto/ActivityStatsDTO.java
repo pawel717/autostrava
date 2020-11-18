@@ -41,7 +41,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   ActivityStatsDTO.JSON_PROPERTY_ALL_RUN_TOTALS,
   ActivityStatsDTO.JSON_PROPERTY_ALL_SWIM_TOTALS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T18:37:28.613+01:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T20:13:51.882+01:00[Europe/Belgrade]")
 public class ActivityStatsDTO {
   public static final String JSON_PROPERTY_BIGGEST_RIDE_DISTANCE = "biggest_ride_distance";
   private Double biggestRideDistance;

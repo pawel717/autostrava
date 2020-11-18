@@ -36,7 +36,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   SummarySegmentEffortDTO.JSON_PROPERTY_DISTANCE,
   SummarySegmentEffortDTO.JSON_PROPERTY_IS_KOM
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T18:37:28.613+01:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T20:13:51.882+01:00[Europe/Belgrade]")
 public class SummarySegmentEffortDTO {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   SummaryPRSegmentEffortDTO.JSON_PROPERTY_PR_DATE,
   SummaryPRSegmentEffortDTO.JSON_PROPERTY_EFFORT_COUNT
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T18:37:28.613+01:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T20:13:51.882+01:00[Europe/Belgrade]")
 public class SummaryPRSegmentEffortDTO {
   public static final String JSON_PROPERTY_PR_ACTIVITY_ID = "pr_activity_id";
   private Long prActivityId;

@@ -46,7 +46,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   DetailedActivityAllOfDTO.JSON_PROPERTY_LAPS,
   DetailedActivityAllOfDTO.JSON_PROPERTY_BEST_EFFORTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T18:37:28.613+01:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T20:13:51.882+01:00[Europe/Belgrade]")
 public class DetailedActivityAllOfDTO {
   public static final String JSON_PROPERTY_DESCRIPTION = "description";
   private String description;

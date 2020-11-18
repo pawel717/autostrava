@@ -33,7 +33,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   HeartRateZoneRangesDTO.JSON_PROPERTY_CUSTOM_ZONES,
   HeartRateZoneRangesDTO.JSON_PROPERTY_ZONES
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T18:37:28.613+01:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T20:13:51.882+01:00[Europe/Belgrade]")
 public class HeartRateZoneRangesDTO {
   public static final String JSON_PROPERTY_CUSTOM_ZONES = "custom_zones";
   private Boolean customZones;

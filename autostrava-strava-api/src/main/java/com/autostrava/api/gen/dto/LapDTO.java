@@ -49,7 +49,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   LapDTO.JSON_PROPERTY_START_DATE_LOCAL,
   LapDTO.JSON_PROPERTY_TOTAL_ELEVATION_GAIN
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T18:37:28.613+01:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T20:13:51.882+01:00[Europe/Belgrade]")
 public class LapDTO {
   public static final String JSON_PROPERTY_ID = "id";
   private Long id;

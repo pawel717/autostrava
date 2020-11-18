@@ -51,7 +51,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
   RouteDTO.JSON_PROPERTY_ESTIMATED_MOVING_TIME,
   RouteDTO.JSON_PROPERTY_SEGMENTS
 })
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T18:37:28.613+01:00[Europe/Belgrade]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-11-17T20:13:51.882+01:00[Europe/Belgrade]")
 public class RouteDTO {
   public static final String JSON_PROPERTY_ATHLETE = "athlete";
   private SummaryAthleteDTO athlete = null;
